@@ -1,5 +1,8 @@
 {
-  "name": "react-example",
+  "name": "pa6c-robot-remote",
+  "description": "Cross-platform remote control application for PA6C parking robot",
+  "author": "Bob Lee",
+  "license": "MIT",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -12,7 +15,9 @@
     "lint": "tsc --noEmit",
     "electron:dev": "electron .",
     "build:exe": "npm run build && electron-builder --win",
-    "build:mac": "npm run build && electron-builder --mac"
+    "build:mac": "npm run build && electron-builder --mac",
+    "android:sync": "npm run build && npx cap sync",
+    "android:open": "npx cap open android"
   },
   "build": {
     "appId": "com.pa6c.remote",
@@ -29,6 +34,9 @@
     }
   },
   "dependencies": {
+    "@capacitor/android": "^8.3.0",
+    "@capacitor/cli": "^8.3.0",
+    "@capacitor/core": "^8.3.0",
     "@google/genai": "^1.29.0",
     "@tailwindcss/vite": "^4.1.14",
     "@vitejs/plugin-react": "^5.0.4",

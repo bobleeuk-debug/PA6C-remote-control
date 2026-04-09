@@ -42,8 +42,10 @@ export function ControlPanel({ state, onCommand, language }: ControlPanelProps) 
       {/* Background Placeholder for Video */}
       <div className="absolute inset-4 bg-slate-900/50 rounded-2xl border border-slate-800 flex items-center justify-center -z-10">
         <div className="text-slate-700 flex flex-col items-center gap-2">
-          <div className="w-12 h-12 rounded-full border-2 border-slate-800 border-t-slate-600 animate-spin" />
-          <span className="text-[10px] uppercase tracking-[0.2em]">Video Stream Placeholder</span>
+          <div className="w-12 h-12 rounded-full border-2 border-slate-800 flex items-center justify-center">
+            <Play className="w-6 h-6 text-slate-800 opacity-20" />
+          </div>
+          <span className="text-[10px] uppercase tracking-[0.2em] opacity-30">Video Stream Placeholder</span>
         </div>
       </div>
 

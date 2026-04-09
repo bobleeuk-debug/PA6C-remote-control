@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PA6C Remote</string>
+    <string name="title_activity_main">PA6C Remote</string>
+    <string name="package_name">com.pa6c.remote</string>
+    <string name="custom_url_scheme">com.pa6c.remote</string>
+</resources>
