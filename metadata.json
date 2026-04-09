@@ -1,0 +1,5 @@
+{
+  "name": "PA6C 停车机器人软遥控器",
+  "description": "PA6C 停车机器人实时控制应用，支持双摇杆操控、进退车流程监控及状态管理。",
+  "requestFramePermissions": []
+}
